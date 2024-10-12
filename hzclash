@@ -8,7 +8,7 @@ ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
@@ -17,7 +17,6 @@ ruleset=🐟 漏网之鱼,[]FINAL
 
 ;策略组定义
 custom_proxy_group=🚀 节点选择`select`[]🔯 香港故转`[]🔯 日本故转`[]🔯 加坡故转`[]♻️ 自动选择`[]🍃 香港均衡`[]🐸 手动切换`[]DIRECT
-custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]🐸 手动切换`[]🔯 香港故转`[]🔯 日本故转`[]🔯 加坡故转`[]♻️ 自动选择
 custom_proxy_group=🎶 TikTok`select`[]🚀 节点选择`[]🐸 手动切换`[]🔯 香港故转`[]🔯 日本故转`[]🔯 加坡故转`[]♻️ 自动选择
 custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]🐸 手动切换
 custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]🔯 香港故转`[]🔯 日本故转`[]🔯 加坡故转`[]♻️ 自动选择`[]🐸 手动切换`[]DIRECT
