@@ -52,7 +52,13 @@ rule = [".*"]
 [[custom_groups]]
 name = "📲 Telegram"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 台湾散列", "[]🌐 台湾轮询", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 台湾散列", "[]🌐 台湾轮询", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "🧚 AI"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🔯 日本故转", "[]🔯 美国故转", "[]🐸 手动切换"]
+
 
 [[custom_groups]]
 name = "🎯 全球直连"
@@ -146,6 +152,34 @@ ruleset = "[]DOMAIN-SUFFIX,services.googleapis.cn"
 group = "📲 Telegram"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
 type = "clash-classic"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+type = "clash-classic"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml"
+type = "clash-classic"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml"
+type = "clash-classic"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
+type = "clash-classic"
+
+[[rulesets]]
+group = "🧚 AI"
+ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Perplexity.list"
 
 [[rulesets]]
 group = "🚀 节点选择"
