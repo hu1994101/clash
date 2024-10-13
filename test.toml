@@ -4,7 +4,7 @@ enable_rule_generator = true
 overwrite_original_rules = true
 
 [[custom_groups]]
-name = "LoadBalance"
+name = "111"
 type = "load-balance"
 rule = [".*", "[]Proxy", "[]DIRECT"]
 interval = 100
@@ -12,7 +12,7 @@ strategy = "consistent-hashing"
 url = "http://www.gstatic.com/generate_204"
 
 [[custom_groups]]
-name = "LoadBalance"
+name = "222"
 type = "load-balance"
 rule = [".*", "[]Proxy", "[]DIRECT"]
 interval = 100
