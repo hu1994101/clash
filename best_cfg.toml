@@ -126,15 +126,15 @@ interval = 100
 strategy = "round-robin"
 url = "http://www.gstatic.com/generate_204"
 
-[[custom_groups]]
-name = "🐹 自建节点"
-type = "select"
-rule = ["(自建)"]
+#[[custom_groups]]
+#name = "🐹 自建节点"
+#type = "select"
+#rule = ["(自建)"]
 
-[[custom_groups]]
-name = "🔗 链式代理"
-type = "relay"
-rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
+#[[custom_groups]]
+#name = "🔗 链式代理"
+#type = "relay"
+#rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
 
 #规则集定义
 #[[rulesets]]
