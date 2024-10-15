@@ -60,9 +60,12 @@ type = "select"
 rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🌐 香港轮询", "[]🌐 加坡轮询", "[]🌐 台湾轮询", "[]🐸 手动切换"]
 
 [[custom_groups]]
-name = "🎯 全球直连"
-type = "select"
-rule = ["[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+name = "♻️ 自动选择"
+type = "url-test"
+rule = [".*"]
+url = "http://www.gstatic.com/generate_204"
+interval = 180
+tolerance = 50
 
 [[custom_groups]]
 name = "🐸 手动切换"
@@ -70,12 +73,9 @@ type = "select"
 rule = [".*"]
 
 [[custom_groups]]
-name = "♻️ 自动选择"
-type = "url-test"
-rule = [".*"]
-url = "http://www.gstatic.com/generate_204"
-interval = 180
-tolerance = 50
+name = "🎯 全球直连"
+type = "select"
+rule = ["[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🍃 香港散列"
