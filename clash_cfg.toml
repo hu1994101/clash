@@ -17,17 +17,17 @@ url = "http://www.gstatic.com/generate_204"
 interval = 180
 
 [[custom_groups]]
+name = "🐟 漏网之鱼"
+type = "select"
+rule = ["[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
 rule = ["(^(?!.*(自建)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 180
 tolerance = 50
-
-[[custom_groups]]
-name = "🐟 漏网之鱼"
-type = "select"
-rule = ["[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🔯 台湾故转"
