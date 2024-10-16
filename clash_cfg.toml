@@ -3,12 +3,14 @@ version = 1
 enable_rule_generator = true
 overwrite_original_rules = true
 
-[[emoji]]
-import = "snippets/emoji.toml"
+[emojis]
+add_emoji = true
+remove_old_emoji = true
 
-[[emoji]]
+[[emojis.emoji]]
 match = "(自建)"
 emoji = "🏡"
+import = "snippets/emoji.toml"
 
 #策略组定义
 [[custom_groups]]
