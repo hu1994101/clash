@@ -3,6 +3,9 @@ version = 1
 enable_rule_generator = true
 overwrite_original_rules = true
 
+[[emojis.emoji]]
+import = "snippets/emoji.toml"
+
 [[emoji]]
 match = "(自建)"
 emoji = "🏡"
