@@ -136,9 +136,6 @@ type = "relay"
 rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
 
 #规则集定义
-#[[rulesets]]
-#import = "snippets/rulesets.toml"
-
 [[rulesets]]
 group = "🚀 节点选择"
 ruleset = "[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com"
