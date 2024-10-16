@@ -30,7 +30,7 @@ interval = 100
 tolerance = 50
 
 [[custom_groups]]
-name = "♻️ 台日新韩"
+name = "🏡 台日新韩"
 type = "url-test"
 rule = ["(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea)"]
 url = "http://www.gstatic.com/generate_204"
