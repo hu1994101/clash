@@ -151,76 +151,10 @@ name = "🔗 链式代理"
 type = "relay"
 rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
 
-#规则集定义
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com"
+[ruleset]
+enabled = true
+overwrite_original_rules = true
+update_ruleset_on_request = true
 
 [[rulesets]]
-group = "🚀 节点选择"
-ruleset = "[]DOMAIN-SUFFIX,services.googleapis.cn"
-
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
-
-[[rulesets]]
-group = "📢 GitHub"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list"
-
-[[rulesets]]
-group = "📲 Telegram"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "🧚 AI"
-ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Perplexity.list"
-
-[[rulesets]]
-group = "🎯 流媒体"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
-
-[[rulesets]]
-group = "🎯 流媒体"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list"
-
-[[rulesets]]
-group = "🎯 流媒体"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
-
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"
-
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "[]GEOSITE,geolocation-!cn"
-
-[[rulesets]]
-group = "🐟 漏网之鱼"
-ruleset = "[]FINAL"
+import = "https://raw.githubusercontent.com/hu1994101/clash/refs/heads/main/rulesets.toml"
