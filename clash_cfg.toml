@@ -66,6 +66,16 @@ url = "http://www.gstatic.com/generate_204"
 interval = 100
 
 [[custom_groups]]
+name = "📢 GitHub"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "📲 Telegram"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🌐 香港轮询", "[]🌐 加坡轮询", "[]🌐 台湾轮询", "[]🐸 手动切换"]
+
+[[custom_groups]]
 name = "🧚 AI"
 type = "select"
 rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
@@ -74,11 +84,6 @@ rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]
 name = "🎯 流媒体"
 type = "select"
 rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
-
-[[custom_groups]]
-name = "📲 Telegram"
-type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🌐 香港轮询", "[]🌐 加坡轮询", "[]🌐 台湾轮询", "[]🐸 手动切换"]
 
 [[custom_groups]]
 name = "🐸 手动切换"
@@ -155,6 +160,10 @@ ruleset = "[]DOMAIN-SUFFIX,services.googleapis.cn"
 [[rulesets]]
 group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
+
+[[rulesets]]
+group = "📢 GitHub"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list"
 
 [[rulesets]]
 group = "📲 Telegram"
