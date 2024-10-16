@@ -1,0 +1,165 @@
+version = 1
+[custom]
+enable_rule_generator = true
+overwrite_original_rules = true
+
+[[emoji]]
+import = "https://raw.githubusercontent.com/hu1994101/clash/refs/heads/main/emoji.toml"
+
+#策略组定义
+[[custom_groups]]
+name = "🚀 节点选择"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]♻️ 香港自动", "[]♻️ 台日新韩", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 台湾散列", "[]🌐 台湾轮询", "[]🐸 手动切换", "[]🔗 链式代理", "[]DIRECT"]
+
+[[custom_groups]]
+name = "🔯 香港故转"
+type = "fallback"
+rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+
+[[custom_groups]]
+name = "🐟 漏网之鱼"
+type = "select"
+rule = ["[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
+name = "♻️ 香港自动"
+type = "url-test"
+rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+tolerance = 50
+
+[[custom_groups]]
+name = "♻️ 台日新韩"
+type = "url-test"
+rule = ["(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+tolerance = 50
+
+[[custom_groups]]
+name = "🔯 台湾故转"
+type = "fallback"
+rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+
+[[custom_groups]]
+name = "🔯 日本故转"
+type = "fallback"
+rule = ["(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+
+[[custom_groups]]
+name = "🔯 加坡故转"
+type = "fallback"
+rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+
+[[custom_groups]]
+name = "🔯 美国故转"
+type = "fallback"
+rule = ["(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States))^((?!(游戏|剩余|流量|0.5|0.5倍|0.5x|10.0|10倍|10x|20.0|20倍|20x)).)*$"]
+url = "http://www.gstatic.com/generate_204"
+interval = 100
+
+[[custom_groups]]
+name = "📢 GitHub"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]♻️ 香港自动", "[]♻️ 台日新韩", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "📲 Telegram"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🚀 节点选择", "[]🌐 香港轮询", "[]🌐 加坡轮询", "[]🌐 台湾轮询", "[]♻️ 香港自动", "[]♻️ 台日新韩", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "🧚 AI"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "🎯 流媒体"
+type = "select"
+rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
+
+[[custom_groups]]
+name = "🐸 手动切换"
+type = "select"
+rule = [".*"]
+
+[[custom_groups]]
+name = "🍃 香港散列"
+type = "load-balance"
+rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "consistent-hashing"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🌐 香港轮询"
+type = "load-balance"
+rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "round-robin"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🍃 台湾散列"
+type = "load-balance"
+rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "consistent-hashing"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🌐 台湾轮询"
+type = "load-balance"
+rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "round-robin"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🍃 加坡散列"
+type = "load-balance"
+rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "consistent-hashing"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🌐 加坡轮询"
+type = "load-balance"
+rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+interval = 100
+strategy = "round-robin"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "🐹 自建节点"
+type = "select"
+rule = ["(自建)"]
+
+[[custom_groups]]
+name = "🔗 链式代理"
+type = "relay"
+rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
+
+#规则集定义
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com"
+
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "[]DOMAIN-SUFFIX,services.googleapis.cn"
+
+[[rulesets]]
+group = "🐟 漏网之鱼"
+ruleset = "[]FINAL"
