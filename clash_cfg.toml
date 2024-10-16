@@ -3,6 +3,10 @@ version = 1
 enable_rule_generator = true
 overwrite_original_rules = true
 
+[[emoji]]
+match = "(自建)"
+emoji = "🏡"
+
 #策略组定义
 [[custom_groups]]
 name = "🚀 节点选择"
