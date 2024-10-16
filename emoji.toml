@@ -1,4 +1,8 @@
 [[emoji]]
+match = "(自建)"
+emoji = "🏡"
+
+[[emoji]]
 match = "(?i:Bandwidth|expire|流量|时间|应急|过期)"
 emoji = "🏳️‍🌈"
 
