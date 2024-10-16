@@ -3,7 +3,7 @@ version = 1
 enable_rule_generator = true
 overwrite_original_rules = true
 
-[[emoji]]
+[[emojis.emoji]]
 match = "(自建)"
 emoji = "🏡"
 
