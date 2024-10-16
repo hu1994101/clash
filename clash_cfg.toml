@@ -3,7 +3,7 @@ version = 1
 enable_rule_generator = true
 overwrite_original_rules = true
 
-[[emojis.emoji]]
+[[emoji]]
 import = "snippets/emoji.toml"
 
 [[emoji]]
