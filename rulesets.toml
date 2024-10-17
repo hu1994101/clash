@@ -9,10 +9,6 @@ group = "📢 固定节点"
 ruleset = "[]GEOSITE,github"
 
 [[rulesets]]
-group = "📢 固定节点"
-ruleset = "[]GEOSITE,openai"
-
-[[rulesets]]
 group = "🎯 流媒体"
 ruleset = "[]GEOSITE,netflix"
 
