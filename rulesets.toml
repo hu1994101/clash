@@ -10,15 +10,11 @@ ruleset = "[]GEOSITE,github"
 
 [[rulesets]]
 group = "🎯 流媒体"
-ruleset = "[]GEOSITE,netflix"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list"
 
 [[rulesets]]
 group = "🎯 流媒体"
-ruleset = "[]GEOSITE,disney"
-
-[[rulesets]]
-group = "🎯 流媒体"
-ruleset = "[]GEOSITE,hulu"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
 
 [[rulesets]]
 group = "🚀 节点选择"
