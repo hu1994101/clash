@@ -14,7 +14,7 @@ interval = 120
 [[custom_groups]]
 name = "🐟 漏网之鱼"
 type = "select"
-rule = ["[]🚀 节点选择", "[]DIRECT"]
+rule = ["[]DIRECT", "[]🚀 节点选择"]
 
 [[custom_groups]]
 name = "♻️ 香港自动"
