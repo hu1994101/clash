@@ -1,6 +1,6 @@
 #规则集定义
 [[rulesets]]
-group = "[]DIRECT"
+group = "DIRECT"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list"
 
 [[rulesets]]
