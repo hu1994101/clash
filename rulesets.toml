@@ -4,6 +4,10 @@ group = "DIRECT"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list"
 
 [[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
+
+[[rulesets]]
 group = "📲 Telegram"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list"
 
@@ -13,31 +17,7 @@ ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/h
 
 [[rulesets]]
 group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list"
-
-[[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
-type = "clash-classic"
-
-[[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Perplexity.list"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
 
 [[rulesets]]
 group = "🎯 流媒体"
@@ -50,10 +30,6 @@ ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master
 [[rulesets]]
 group = "🎯 流媒体"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
-
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
 
 [[rulesets]]
 group = "🚀 节点选择"
