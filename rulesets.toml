@@ -1,9 +1,5 @@
 #规则集定义
 [[rulesets]]
-group = "📢 固定节点"
-ruleset = "https://raw.githubusercontent.com/hu1994101/clash/refs/heads/main/dns.list"
-
-[[rulesets]]
 group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list"
 
