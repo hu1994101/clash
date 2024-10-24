@@ -9,7 +9,7 @@ name = "🔯 香港故转"
 type = "fallback"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 
 [[custom_groups]]
 name = "🐟 漏网之鱼"
@@ -21,7 +21,7 @@ name = "♻️ 香港自动"
 type = "url-test"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 tolerance = 50
 
 [[custom_groups]]
@@ -29,35 +29,35 @@ name = "🔯 台湾故转"
 type = "fallback"
 rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 
 [[custom_groups]]
 name = "🔯 日本故转"
 type = "fallback"
 rule = ["(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 
 [[custom_groups]]
 name = "🔯 加坡故转"
 type = "fallback"
 rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 
 [[custom_groups]]
 name = "🔯 美国故转"
 type = "fallback"
 rule = ["(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States))^((?!(游戏|剩余|流量|0.5|0.5倍|0.5x|10.0|10倍|10x|20.0|20倍|20x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 
 [[custom_groups]]
 name = "♻️ 台湾自动"
 type = "url-test"
 rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 tolerance = 50
 
 [[custom_groups]]
@@ -65,7 +65,7 @@ name = "♻️ 加坡自动"
 type = "url-test"
 rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 300
 tolerance = 50
 
 [[custom_groups]]
@@ -102,7 +102,7 @@ rule = ["[]🐸 手动切换", "[]🐹 自建节点"]
 name = "🍃 香港散列"
 type = "load-balance"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "consistent-hashing"
 url = "http://www.gstatic.com/generate_204"
 
@@ -110,7 +110,7 @@ url = "http://www.gstatic.com/generate_204"
 name = "🌐 香港轮询"
 type = "load-balance"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "round-robin"
 url = "http://www.gstatic.com/generate_204"
 
@@ -118,7 +118,7 @@ url = "http://www.gstatic.com/generate_204"
 name = "🍃 台湾散列"
 type = "load-balance"
 rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "consistent-hashing"
 url = "http://www.gstatic.com/generate_204"
 
@@ -126,7 +126,7 @@ url = "http://www.gstatic.com/generate_204"
 name = "🌐 台湾轮询"
 type = "load-balance"
 rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "round-robin"
 url = "http://www.gstatic.com/generate_204"
 
@@ -134,7 +134,7 @@ url = "http://www.gstatic.com/generate_204"
 name = "🍃 加坡散列"
 type = "load-balance"
 rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "consistent-hashing"
 url = "http://www.gstatic.com/generate_204"
 
@@ -142,7 +142,7 @@ url = "http://www.gstatic.com/generate_204"
 name = "🌐 加坡轮询"
 type = "load-balance"
 rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-interval = 120
+interval = 300
 strategy = "round-robin"
 url = "http://www.gstatic.com/generate_204"
 
