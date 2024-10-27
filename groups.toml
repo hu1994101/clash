@@ -2,14 +2,7 @@
 [[custom_groups]]
 name = "🚀 节点选择"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 台湾散列", "[]🌐 台湾轮询", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
-name = "🔯 香港故转"
-type = "fallback"
-rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
+rule = ["[]🔯 香港故转", "[]⭐ HK故转", "[]🔯 台湾故转", "[]⭐ TW故转", "[]🔯 加坡故转", "[]⭐ SG故转", "[]🔯 日本故转", "[]⭐ JP故转", "[]♻️ 香港自动", "[]🍀 HK自动", "[]♻️ 加坡自动", "[]🍀 SG自动", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 台湾散列", "[]🌐 台湾轮询", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🐟 漏网之鱼"
@@ -17,45 +10,74 @@ type = "select"
 rule = ["[]DIRECT", "[]🚀 节点选择"]
 
 [[custom_groups]]
-name = "♻️ 香港自动"
-type = "url-test"
-rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+name = "🔯 香港故转"
+type = "fallback"
+rule = ["!!GROUPID=0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
-tolerance = 50
+
+[[custom_groups]]
+name = "⭐ HK故转"
+type = "fallback"
+rule = ["!!GROUPID=!0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
 
 [[custom_groups]]
 name = "🔯 台湾故转"
 type = "fallback"
-rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+rule = ["!!GROUPID=0!!(台|新北|彰化|TW|Taiwan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
-name = "🔯 日本故转"
+name = "⭐ TW故转"
 type = "fallback"
-rule = ["(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+rule = ["!!GROUPID=!0!!(台|新北|彰化|TW|Taiwan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
 name = "🔯 加坡故转"
 type = "fallback"
-rule = ["(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+rule = ["!!GROUPID=0!!(新加坡|坡|狮城|SG|Singapore)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
-name = "🔯 美国故转"
+name = "⭐ SG故转"
 type = "fallback"
-rule = ["(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States))^((?!(游戏|剩余|流量|0.5|0.5倍|0.5x|10.0|10倍|10x|20.0|20倍|20x)).)*$"]
+rule = ["!!GROUPID=!0!!(新加坡|坡|狮城|SG|Singapore)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+
+[[custom_groups]]
+name = "🔯 日本故转"
+type = "fallback"
+rule = ["!!GROUPID=0!!(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
-name = "♻️ 台湾自动"
+name = "⭐ JP故转"
+type = "fallback"
+rule = ["!!GROUPID=!0!!(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "♻️ 香港自动"
 type = "url-test"
-rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
+rule = ["!!GROUPID=0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
+name = "🍀 HK自动"
+type = "url-test"
+rule = ["!!GROUPID=!0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -69,24 +91,32 @@ interval = 300
 tolerance = 50
 
 [[custom_groups]]
+name = "🍀 SG自动"
+type = "url-test"
+rule = ["!!GROUPID=!0!!(新加坡|坡|狮城|SG|Singapore)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
+
+[[custom_groups]]
 name = "📢 固定节点"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]♻️ 香港自动", "[]🚀 节点选择", "[]🐸 手动切换"]
+rule = ["[]🔯 香港故转", "[]⭐ HK故转", "[]🔯 台湾故转", "[]⭐ TW故转", "[]🔯 加坡故转", "[]⭐ SG故转", "[]🔯 日本故转", "[]⭐ JP故转", "[]♻️ 香港自动", "[]🍀 HK自动", "[]♻️ 加坡自动", "[]🍀 SG自动", "[]🚀 节点选择", "[]🐸 手动切换"]
 
 [[custom_groups]]
 name = "📲 Telegram"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]♻️ 香港自动", "[]♻️ 加坡自动", "[]🚀 节点选择", "[]🐸 手动切换"]
+rule = ["[]🔯 香港故转", "[]⭐ HK故转", "[]🔯 加坡故转", "[]⭐ SG故转", "[]♻️ 香港自动", "[]🍀 HK自动", "[]♻️ 加坡自动", "[]🍀 SG自动", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🍃 加坡散列", "[]🌐 加坡轮询", "[]🚀 节点选择", "[]🐸 手动切换"]
 
 [[custom_groups]]
 name = "🎯 流媒体"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🐸 手动切换"]
+rule = ["[]🔯 香港故转", "[]⭐ HK故转", "[]🔯 台湾故转", "[]⭐ TW故转", "[]🔯 加坡故转", "[]⭐ SG故转", "[]🔯 日本故转", "[]⭐ JP故转", "[]🚀 节点选择", "[]🐸 手动切换"]
 
 [[custom_groups]]
 name = "🍎 代理专用"
 type = "select"
-rule = ["[]🔯 香港故转", "[]🔯 台湾故转", "[]🔯 加坡故转", "[]🔯 日本故转", "[]🔯 美国故转", "[]🚀 节点选择", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🔯 香港故转", "[]⭐ HK故转", "[]🔯 台湾故转", "[]⭐ TW故转", "[]🔯 加坡故转", "[]⭐ SG故转", "[]🔯 日本故转", "[]⭐ JP故转", "[]🚀 节点选择", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🐹 自建节点"
