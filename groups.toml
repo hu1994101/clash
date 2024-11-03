@@ -2,7 +2,7 @@
 [[custom_groups]]
 name = "🚀 节点选择"
 type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🍃 香港散列", "[]🌐 香港轮询", "[]🚢 自建节点", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]✈️ 香港散列", "[]🕊 香港轮询", "[]🚢 自建节点", "[]🔗 链式代理", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🐟 漏网之鱼"
@@ -15,6 +15,31 @@ type = "select"
 rule = [".*"]
 
 [[custom_groups]]
+name = "📢 远程DNS"
+type = "select"
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
+name = "👨‍💻 GitHub"
+type = "select"
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
+name = "📲 Telegram"
+type = "select"
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
+name = "🎵 Spotify"
+type = "select"
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
+name = "🎯 流媒体"
+type = "select"
+rule = ["[]♻️ 香港自动", "[]♻️ 台湾自动", "[]♻️ 加坡自动", "[]♻️ 日本自动", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
 name = "♻️ 香港自动"
 type = "url-test"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
@@ -23,66 +48,9 @@ interval = 300
 tolerance = 50
 
 [[custom_groups]]
-name = "✈️ 香港高速"
-type = "url-test"
-rule = ["!!GROUPID=0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "🕊 香港普速"
-type = "url-test"
-rule = ["!!GROUPID=!0!!(香港|HK|Hong Kong|🇭🇰|HongKong)(?!.*(深港|家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "📢 远程DNS"
-type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
-name = "👨‍💻 GitHub"
-type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
-name = "📲 Telegram"
-type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
-name = "🎵 Spotify"
-type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
-name = "🎯 流媒体"
-type = "select"
-rule = ["[]♻️ 香港自动", "[]✈️ 香港高速", "[]🕊 香港普速", "[]♻️ 台湾自动", "[]✈️ 台湾高速", "[]🕊 台湾普速", "[]♻️ 加坡自动", "[]✈️ 加坡高速", "[]🕊 加坡普速", "[]♻️ 日本自动", "[]✈️ 日本高速", "[]🕊 日本普速", "[]🚀 节点选择", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
 name = "♻️ 台湾自动"
 type = "url-test"
 rule = ["(?=.*(台|新北|彰化|TW|Taiwan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "✈️ 台湾高速"
-type = "url-test"
-rule = ["!!GROUPID=0!!(台|新北|彰化|TW|Taiwan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "🕊 台湾普速"
-type = "url-test"
-rule = ["!!GROUPID=!0!!(台|新北|彰化|TW|Taiwan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -96,22 +64,6 @@ interval = 300
 tolerance = 50
 
 [[custom_groups]]
-name = "✈️ 加坡高速"
-type = "url-test"
-rule = ["!!GROUPID=0!!(新加坡|坡|狮城|SG|Singapore)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "🕊 加坡普速"
-type = "url-test"
-rule = ["!!GROUPID=!0!!(新加坡|坡|狮城|SG|Singapore)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
 name = "♻️ 日本自动"
 type = "url-test"
 rule = ["(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
@@ -120,23 +72,7 @@ interval = 300
 tolerance = 50
 
 [[custom_groups]]
-name = "✈️ 日本高速"
-type = "url-test"
-rule = ["!!GROUPID=0!!(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "🕊 日本普速"
-type = "url-test"
-rule = ["!!GROUPID=!0!!(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)(?!.*(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x))"]
-url = "http://www.gstatic.com/generate_204"
-interval = 300
-tolerance = 50
-
-[[custom_groups]]
-name = "🍃 香港散列"
+name = "✈️ 香港散列"
 type = "load-balance"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 interval = 300
@@ -144,7 +80,7 @@ strategy = "consistent-hashing"
 url = "http://www.gstatic.com/generate_204"
 
 [[custom_groups]]
-name = "🌐 香港轮询"
+name = "🕊 香港轮询"
 type = "load-balance"
 rule = ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(家宽|游戏|剩余|流量|0.5|0.5倍|0.5x|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x|5.0|5倍|5x)).)*$"]
 interval = 300
