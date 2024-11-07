@@ -12,7 +12,7 @@ rule = ["[]DIRECT", "[]🚀 节点选择"]
 [[custom_groups]]
 name = "🐸 手动切换"
 type = "select"
-rule = [".*"]
+rule = [".*", "!!PROVIDER=home-proxy"]
 
 [[custom_groups]]
 name = "🚢 自建节点"
