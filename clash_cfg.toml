@@ -2,6 +2,7 @@ version = 1
 [custom]
 enable_rule_generator = true
 overwrite_original_rules = true
+clash_rule_base = "https://raw.githubusercontent.com/hu1994101/clash/refs/heads/main/clash_provider_test.yml"
 
 [[emoji]]
 import = "https://raw.githubusercontent.com/hu1994101/clash/refs/heads/main/emoji.toml"
