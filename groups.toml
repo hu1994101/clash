@@ -18,7 +18,6 @@ use = ["home-proxy"]
 [[custom_groups]]
 name = "🚢 自建节点"
 type = "select"
-rule = ["(自建)"]
 use = ["home-proxy"]
 
 [[custom_groups]]
